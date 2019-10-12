@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GameManager : MonoBehaviour
 
 	int gridWidth = 50;
 	int gridHeight = 50;
+
+    public GameObject ball;
+    public Text text;
 
 	float cellDimension = 3.3f;
 	float cellSpacing = 0.2f;
@@ -65,6 +69,11 @@ public class GameManager : MonoBehaviour
 			//reset the timer
 			generationTimer = generationRate;
 		}
+
+        if (ball.transform.position.y < 0)
+        {
+            text.text = "You win!";
+        }
 	}
 
 	void generate()

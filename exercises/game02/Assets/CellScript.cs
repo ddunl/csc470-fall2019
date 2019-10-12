@@ -56,8 +56,16 @@ public class CellScript : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    private void OnMouseOver()
     {
-        alive = !alive;
+        if (Input.GetMouseButton(0))
+        {
+            transform.localScale += new Vector3(0, 3 , 0);
+
+        } else
+        {
+            alive = !alive;
+        }
+       
     }
 }
