@@ -1,4 +1,4 @@
-##Game design document
+## Game design document
 
 For this game, I will make a tower defense style game where the towers have options and potentially upgrades. There will be health and gold resources like a normal tower defense games, with waves of enemies.
 
