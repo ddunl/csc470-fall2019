@@ -34,3 +34,10 @@ Above, but there will also be towers that inflict status effects (in this case, 
 ## High-Bar
 Above, but there will be a pause and play menu, unique sound effects and particle effects for enemies and towers, a large variety of different drinks
 that can be served to the runners. I'll also have pop up information panels about different types of runners and towers that explain the mehcanics of the game to the user.
+
+
+## Timeline
+I will likely not be able to work on this project until after some of my other final projects and job related work slows down a bit. 
+Here is an overview of how I plan to accomplish this. 
+First, I'll rework the code from the previous object such that I can place different Towers and set a path for the "enemies" to follow on the level. Once I have a coherent setup for having different types of towers that can be placed and selected, I'll work on the runners and designing all the possible attributes. I'll also during this time try to think of boss waves, perhaps a runner that is EXTREMELY thirsty and has to be given gallons and gallons of water to make it to the finish. 
+Once I have at least a few solid working enemies, I'll work on structuring the waves and fine tuning the numbers so that the game feels challenging but not unreasonable. Last time, I struggled with this part much more than I thought I would, so making this game feel less rigid is a big priority. Without this part done well, it will be hard for the game to really feel fun. I hope to finish everything besides the wave and level setup prior to the week before the project is due, and finish and polish the game during the last week.
