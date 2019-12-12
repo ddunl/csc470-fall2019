@@ -10,6 +10,9 @@ public class ShowerScript : MonoBehaviour
     public Material UpgradedMat;
 
     public GameObject[] components;
+
+    public int CoolingRate = 1;
+    public int upgradeCost = 100;
   
     // Start is called before the first frame update
     void Start()
@@ -38,6 +41,8 @@ public class ShowerScript : MonoBehaviour
             foreach (GameObject comp in components)
             {
                 comp.GetComponent<Renderer>().material = UpgradedMat;
+                CoolingRate *= 2;
+                upgradeCost *= 2;
             }
         }
     }
@@ -49,6 +54,9 @@ public class ShowerScript : MonoBehaviour
     {
         GM.NormalizeKeyOpts();
     }
+
+
+
 
 
 }

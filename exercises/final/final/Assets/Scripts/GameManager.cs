@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    
     public GameObject currentCube;
 
     public Text KeyOpts;
@@ -66,7 +67,7 @@ public class GameManager : MonoBehaviour
                 Transform t = currentCube.transform;
                 Debug.Log(t.position);
                 GameObject newT = Instantiate(TowerPrefabs[selectedTurret], t.position + new Vector3(0, .475f, 0), Quaternion.identity);
-                //;
+                money -= 50;
                 pressedB = false;
                 selectedTurret = -1;
                 NormalKeyOpts = "B: Build new tower";

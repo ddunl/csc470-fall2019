@@ -18,14 +18,16 @@ public class WaveManager : MonoBehaviour
         
     }
 
-    void LoadJogger (int health, float speed)
+    JoggerScript LoadJogger (int health)
     {
         GameObject Jogger = Instantiate(JoggerPrefab, new Vector3(4, 2, -5), Quaternion.identity);
 
         JoggerScript js = Jogger.GetComponent<JoggerScript>();
 
-        js.speed = speed;
+       
         js.health = health;
+
+        return js;
     }
 
 
@@ -33,7 +35,8 @@ public class WaveManager : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            LoadJogger(100, 5);
+            var jog = LoadJogger(100);
+            jog.setDeltas(5, 5, 0);
             yield return new WaitForSeconds(1);
         }
     }
